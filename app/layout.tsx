@@ -61,7 +61,7 @@ export default function RootLayout({
                         duration: 1.4,
                     }}
                 >
-                    <a
+                    {/* <a
                         href="https://forms.gle/t73XYJgWD5cJNr6e8"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -69,7 +69,7 @@ export default function RootLayout({
                     >
                         Frontend dev? I&apos;ll help you polish your resume —
                         completely free.
-                    </a>
+                    </a> */}
                     <Navbar />
                     <main>{children}</main>
                     <Footer />
