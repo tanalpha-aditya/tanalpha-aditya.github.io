@@ -17,38 +17,42 @@ export const SOCIAL_LINKS = [
     // { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
+// =================================================================================
+// SKILLS & STACK
+// NOTE: Ensure you have corresponding logo images in the `public/logo/` folder.
+// =================================================================================
 export const MY_STACK = {
-    mlAndDataScience: [
+    'AI & NLP Toolkits': [
         { name: 'PyTorch', icon: '/logo/pytorch.png' },
-        { name: 'TensorFlow', icon: '/logo/tensorflow.png' },
-        { name: 'Scikit-Learn', icon: '/logo/scikit-learn.png' },
         { name: 'LangChain', icon: '/logo/langchain.png' },
+        { name: 'TensorFlow', icon: '/logo/tensorflow.png' },
+        { name: 'Hugging Face', icon: '/logo/hugging-face.png' },
+        { name: 'Scikit-Learn', icon: '/logo/scikit-learn.png' },
+        { name: 'spaCy', icon: '/logo/spacy.png' },
+    ],
+    'LLMs & Models': [
+        { name: 'Llama 3', icon: '/logo/llama.jpg' },
+        { name: 'Mistral', icon: '/logo/mistral.png' },
+        { name: 'Qwen', icon: '/logo/qwen.png' },
+        { name: 'IBM Granite', icon: '/logo/granite.png' },
+        { name: 'Phi', icon: '/logo/phi.png' },
+        { name: 'Gemini', icon: '/logo/gemini.jpg' },
+    ],
+    'Core Languages & Data': [
+        { name: 'Python', icon: '/logo/python.jpg' },
+        { name: 'SQL', icon: '/logo/sql.png' },
         { name: 'Pandas', icon: '/logo/pandas.png' },
         { name: 'NumPy', icon: '/logo/numpy.png' },
+        // { name: 'PySpark', icon: '/logo/pyspark.png' },
+        { name: 'C++', icon: '/logo/cpp.jpg' },
     ],
-    frontend: [
-        { name: 'React', icon: '/logo/react.png' },
-        { name: 'JavaScript', icon: '/logo/js.png' },
-        { name: 'HTML/CSS', icon: '/logo/html.png' },
-        { name: 'Tailwind CSS', icon: '/logo/tailwind.png' },
-        { name: 'Bootstrap', icon: '/logo/bootstrap.svg' },
-    ],
-    backend: [
-        { name: 'Python', icon: '/logo/python.png' },
-        { name: 'FastAPI', icon: '/logo/fastapi.svg' },
-        { name: 'Node.js', icon: '/logo/node.png' },
-    ],
-    database: [
-        { name: 'MySQL', icon: '/logo/mysql.svg' },
+    'Backend, Cloud & Tools': [
         { name: 'MongoDB', icon: '/logo/mongodb.svg' },
-        { name: 'SQL', icon: '/logo/sql.png' },
-    ],
-    tools: [
-        { name: 'Git', icon: '/logo/git.png' },
         { name: 'Docker', icon: '/logo/docker.svg' },
         { name: 'Firebase', icon: '/logo/firebase.png' },
-        { name: 'PySpark', icon: '/logo/pyspark.png' },
-        { name: 'IBM CCC', icon: '/logo/ibm.png' },
+        { name: 'Git', icon: '/logo/git.png' },
+        { name: 'React', icon: '/logo/react.png' },
+        { name: 'Node.js', icon: '/logo/node.png' },
     ],
 };
 
