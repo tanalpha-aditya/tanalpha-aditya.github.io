@@ -4,7 +4,7 @@ export const GENERAL_INFO = {
     email: 'tanalpha.aditya@gmail.com',
     emailSubject: "Let's collaborate on a project",
     emailBody: 'Hi Aditya, I am reaching out to you because...',
-    resume: 'https://drive.google.com/file/d/1lM4gTm6ecQ4QUvW0bd8tT1BX0XE_pTIb/view?usp=sharing',
+    resume: '/AdityaRaghuvanshi_IIITH.pdf',
 };
 
 export const SOCIAL_LINKS = [
