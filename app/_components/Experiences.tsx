@@ -5,12 +5,14 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useRef } from 'react';
+import BrandsMarquee from './BrandsMarquee';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Experiences = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
+    // GSAP Animations (no changes)
     useGSAP(
         () => {
             const tl = gsap.timeline({
@@ -56,13 +58,16 @@ const Experiences = () => {
             <div className="container" ref={containerRef}>
                 <SectionTitle title="My Experience" />
 
-                <div className="grid gap-14">
+                <BrandsMarquee />
+
+                {/* --- LAYOUT CHANGE IS HERE --- */}
+                <div className="grid md:grid-cols-2 gap-x-10 gap-y-14 mt-10">
                     {MY_EXPERIENCE.map((item) => (
                         <div key={item.title} className="experience-item">
-                            <p className="text-xl text-muted-foreground">
+                            <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
                                 {item.company}
                             </p>
-                            <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
+                            <p className="text-xl text-muted-foreground mb-1">
                                 {item.title}
                             </p>
                             <p className="text-lg text-muted-foreground">
