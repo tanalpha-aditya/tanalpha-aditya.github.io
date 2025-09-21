@@ -352,8 +352,8 @@ export const MY_EXPERIENCE = [
         duration: 'May 2025 - Aug 2025',
     },
     {
-        title: 'Machine Learning Intern',
-        company: 'AIMA (Remote)',
+        title: 'ML Intern - Remote ( Ireland )',
+        company: 'AIMA',
         duration: 'Oct 2024 - Feb 2025',
     },
     {

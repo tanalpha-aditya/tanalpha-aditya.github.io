@@ -4,13 +4,14 @@ import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
 
 const brands = [
-    { name: 'IBM Research', logo: '/brands/ibm.png' },
     { name: 'AIMA', logo: '/brands/aima.png' },
-    { name: 'TCS Research', logo: '/brands/tcs.png' },
     { name: 'IIIT Hyderabad', logo: '/brands/iiith.png' },
+    { name: 'IBM Research', logo: '/brands/ibm.png' },
+    { name: 'TCS Research', logo: '/brands/tcs.png' },
     { name: 'university of jyväskylä', logo: '/brands/jyu.png' },
-    { name: 'CogSci Lab', logo: '/brands/kcis.jpeg' },
-    { name: 'ChargeKart', logo: '/brands/ck.jpeg' },
+    { name: 'Become', logo: '/brands/become.png' },
+    { name: 'CogSci Lab', logo: '/brands/kcis.png' },
+    { name: 'ChargeKart', logo: '/brands/ck.png' },
 ];
 
 const BrandsMarquee = () => {
@@ -25,7 +26,7 @@ const BrandsMarquee = () => {
                             alt={`${brand.name} logo`}
                             width={120}
                             height={60}
-                            className="h-18 w-auto object-contain"
+                            className="h-18 w-auto object-contain opacity-90 hover:opacity-100 transition-all"
                             // style={{ filter: 'grayscale(1) invert(0.8)' }}
                         />
                     </div>
