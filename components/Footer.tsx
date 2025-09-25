@@ -52,17 +52,17 @@ const Footer = async () => {
                         href="https://www.me.toinfinite.dev/"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
-                        Design & built by Tajmirul
+                        Mobile : +91 8989 69 4908
                         <br />
-                        Revised by Aditya Raghuvanshi
-                        <div className="flex items-center justify-center gap-5 pt-1">
+                        Aditya Raghuvanshi
+                        {/* <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={14} /> {stargazers_count}
                             </span>
                             <span className="flex items-center gap-2">
                                 <GitFork size={14} /> {forks_count}
                             </span>
-                        </div>
+                        </div> */}
                     </a>
                 </div>
             </div>
