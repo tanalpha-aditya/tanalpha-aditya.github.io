@@ -8,7 +8,7 @@ interface RepoStats {
 
 const Footer = async () => {
     const repoStats = await fetch(
-        'https://api.github.com/repos/tajmirul/portfolio-2.0',
+        'https://api.github.com/repos/tanalpha-aditya/tanalpha-aditya.github.io',
         {
             next: {
                 revalidate: 60 * 60, // 1 hour
@@ -31,12 +31,12 @@ const Footer = async () => {
                 </a>
 
                 <div className="">
-                    <a
-                        href="https://github.com/Tajmirul/portfolio-2.0"
+                    {/* <a
+                        href="https://github.com/tanalpha-aditya?tab=repositories"
                         target="_blank"
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
-                        Design & built by Tajmirul Islam
+                        Design by Aditya Raghuvanshi & Tajmirul
                         <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={18} /> {stargazers_count}
@@ -45,22 +45,25 @@ const Footer = async () => {
                                 <GitFork size={18} /> {forks_count}
                             </span>
                         </div>
-                    </a>
+                    </a> */}
 
                     {/* Note: If you are not Tajmirul, use this copyright message instead */}
-                    {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
-                        Revised by YOUR NAME
-
+                    <a
+                        href="https://www.me.toinfinite.dev/"
+                        className="leading-none text-muted-foreground hover:underline hover:text-white"
+                    >
+                        Design & built by Tajmirul
+                        <br />
+                        Revised by Aditya Raghuvanshi
                         <div className="flex items-center justify-center gap-5 pt-1">
-                            <span className='flex items-center gap-2'>
+                            <span className="flex items-center gap-2">
                                 <Star size={14} /> {stargazers_count}
                             </span>
-                            <span className='flex items-center gap-2'>
+                            <span className="flex items-center gap-2">
                                 <GitFork size={14} /> {forks_count}
                             </span>
                         </div>
-                    </a> */}
+                    </a>
                 </div>
             </div>
         </footer>

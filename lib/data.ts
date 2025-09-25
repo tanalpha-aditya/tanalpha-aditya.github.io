@@ -241,6 +241,8 @@ export const PROJECTS: IProject[] = [
     {
         title: 'SPARK: Proof Assistant for Reasoning',
         slug: 'spark-proof-assistant',
+        sourceCode: 'https://github.com/your-username/spark-repo',
+        // liveUrl: 'https://mti-electronics.vercel.app/',
         year: 2025,
         description: `
         A step-by-step proof assistant designed for advanced mathematical reasoning by integrating small Large Language Models (LLMs) with formal verification techniques.
@@ -269,12 +271,13 @@ export const PROJECTS: IProject[] = [
             'Qwen2.5',
             'Formal Verification',
         ],
-        thumbnail: '/projects/thumbnail/spark.webp',
-        longThumbnail: '/projects/long/spark.webp',
+        thumbnail: '/projects/thumbnail/spark.mp4',
+        longThumbnail: '/projects/long/spark.jpg',
         images: [
             '/projects/images/spark-1.webp',
             '/projects/images/spark-2.webp',
         ],
+        sourceCode: 'https://github.com/tanalpha-aditya/SPARK-Maths',
     },
     {
         title: 'Amazon ML Challenge 2024',
@@ -300,16 +303,18 @@ export const PROJECTS: IProject[] = [
         </ul>
         `,
         techStack: [
+            'Qwen-VL',
+            'CV',
             'OCR',
             'DocTr',
             'PaddlePaddle',
             'Llama 3.1',
             'Prompt Engineering',
-            'Qwen-VL',
         ],
         thumbnail: '/projects/thumbnail/amazon-ml.webp',
         longThumbnail: '/projects/long/amazon-ml.webp',
         images: ['/projects/images/amazon-ml-1.webp'],
+        // sourceCode: 'https://github.com/tanalpha-aditya/SPARK-Maths',
     },
     {
         title: 'Hybrid Model for Topic Classification',
@@ -339,6 +344,8 @@ export const PROJECTS: IProject[] = [
         thumbnail: '/projects/thumbnail/hybrid-model.webp',
         longThumbnail: '/projects/long/hybrid-model.webp',
         images: ['/projects/images/hybrid-model-1.webp'],
+        sourceCode:
+            'https://github.com/tanalpha-aditya?page=1&tab=repositories',
     },
 ];
 
@@ -360,6 +367,16 @@ export const MY_EXPERIENCE = [
         title: 'Research Intern',
         company: 'TCS Research',
         duration: 'Jun 2024 - Aug 2024',
+    },
+    {
+        title: 'Computational Linguistic Researcher',
+        company: 'Become',
+        duration: 'Apr 2024 - Jun 2024',
+    },
+    {
+        title: 'Full Stack Developer Intern',
+        company: 'ChargeKart',
+        duration: 'Jan 2023 - Oct 2023',
     },
     {
         title: 'B.Tech CS + MS in Computational Linguistics',

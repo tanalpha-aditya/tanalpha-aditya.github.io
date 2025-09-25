@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { Github, ExternalLink } from 'lucide-react';
 
 interface Props {
     index: number;
@@ -163,6 +164,34 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
                                     )}
                                 </div>
                             ))}
+                    </div>
+                    {/* --- ADD THIS NEW BLOCK FOR LINKS --- */}
+                    <div className="flex items-center gap-4 mt-6">
+                        {project.sourceCode && (
+                            <a
+                                href={project.sourceCode}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                                // Stop the click from closing the accordion
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <Github size={20} />
+                                <span>Source Code</span>
+                            </a>
+                        )}
+                        {project.liveUrl && (
+                            <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                                onClick={(e) => e.stopPropagation()}
+                            >
+                                <ExternalLink size={20} />
+                                <span>Live Demo</span>
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>

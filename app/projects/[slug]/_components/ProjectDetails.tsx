@@ -175,7 +175,7 @@ const ProjectDetails = ({ project }: Props) => {
                     </div>
                 </div>
 
-                <div
+                {/* <div
                     className="fade-in-later relative flex flex-col gap-2 max-w-[800px] mx-auto"
                     id="images"
                 >
@@ -199,7 +199,7 @@ const ProjectDetails = ({ project }: Props) => {
                             </a>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     );
