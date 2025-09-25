@@ -277,7 +277,6 @@ export const PROJECTS: IProject[] = [
             '/projects/images/spark-1.webp',
             '/projects/images/spark-2.webp',
         ],
-        sourceCode: 'https://github.com/tanalpha-aditya/SPARK-Maths',
     },
     {
         title: 'Amazon ML Challenge 2024',
