@@ -22,57 +22,57 @@ const ProjectList = () => {
 
     // update imageRef.current href based on the cursor hover position
     // also update image position
-    useGSAP(
-        (context, contextSafe) => {
-            // show image on hover
-            if (window.innerWidth < 768) {
-                setSelectedProject(null);
-                return;
-            }
+    // useGSAP(
+    //     (context, contextSafe) => {
+    //         // show image on hover
+    //         if (window.innerWidth < 768) {
+    //             setSelectedProject(null);
+    //             return;
+    //         }
 
-            // const handleMouseMove = contextSafe?.((e: MouseEvent) => {
-            //     if (!containerRef.current) return;
-            //     // if (!imageContainer.current) return;
+    //         // const handleMouseMove = contextSafe?.((e: MouseEvent) => {
+    //         //     if (!containerRef.current) return;
+    //         //     // if (!imageContainer.current) return;
 
-            //     if (window.innerWidth < 768) {
-            //         setSelectedProject(null);
-            //         return;
-            //     }
+    //         //     if (window.innerWidth < 768) {
+    //         //         setSelectedProject(null);
+    //         //         return;
+    //         //     }
 
-                // const containerRect =
-                //     containerRef.current?.getBoundingClientRect();
-                // const imageRect =
-                //     imageContainer.current.getBoundingClientRect();
-                // const offsetTop = e.clientY - containerRect.y;
+    //             // const containerRect =
+    //             //     containerRef.current?.getBoundingClientRect();
+    //             // const imageRect =
+    //             //     imageContainer.current.getBoundingClientRect();
+    //             // const offsetTop = e.clientY - containerRect.y;
 
-                // if cursor is outside the container, hide the image
-                // if (
-                //     containerRect.y > e.clientY ||
-                //     containerRect.bottom < e.clientY ||
-                //     containerRect.x > e.clientX ||
-                //     containerRect.right < e.clientX
-                // ) {
-                //     return gsap.to(imageContainer.current, {
-                //         duration: 0.3,
-                //         opacity: 0,
-                //     });
-                // }
+    //             // if cursor is outside the container, hide the image
+    //             // if (
+    //             //     containerRect.y > e.clientY ||
+    //             //     containerRect.bottom < e.clientY ||
+    //             //     containerRect.x > e.clientX ||
+    //             //     containerRect.right < e.clientX
+    //             // ) {
+    //             //     return gsap.to(imageContainer.current, {
+    //             //         duration: 0.3,
+    //             //         opacity: 0,
+    //             //     });
+    //             // }
 
-                // gsap.to(imageContainer.current, {
-                //     y: offsetTop - imageRect.height / 2,
-                //     duration: 1,
-                //     opacity: 1,
-                // });
-            }) as any;
+    //             // gsap.to(imageContainer.current, {
+    //             //     y: offsetTop - imageRect.height / 2,
+    //             //     duration: 1,
+    //             //     opacity: 1,
+    //             // });
+    //         }) as any;
 
-            window.addEventListener('mousemove', handleMouseMove);
+    //         window.addEventListener('mousemove', handleMouseMove);
 
-            return () => {
-                window.removeEventListener('mousemove', handleMouseMove);
-            };
-        },
-        { scope: containerRef, dependencies: [containerRef.current] },
-    );
+    //         return () => {
+    //             window.removeEventListener('mousemove', handleMouseMove);
+    //         };
+    //     },
+    //     { scope: containerRef, dependencies: [containerRef.current] },
+    // );
 
     useGSAP(
         () => {
