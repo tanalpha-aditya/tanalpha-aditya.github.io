@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = [
         name: 'facebook',
         url: 'https://www.facebook.com/profile.php?id=100072223987350',
     },
-    // { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'Medium', url: 'https://medium.com/@tanalpha-aditya' },
 ];
 
 // =================================================================================

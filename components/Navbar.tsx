@@ -29,6 +29,10 @@ const MENU_LINKS = [
         name: 'Projects',
         url: '/#selected-projects',
     },
+    {
+        name: 'Blogs', // <-- ADD a
+        url: '/#blogs', // <-- ADD b
+    },
 ];
 
 const Navbar = () => {

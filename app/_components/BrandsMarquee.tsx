@@ -8,9 +8,10 @@ const brands = [
     { name: 'IIIT Hyderabad', logo: '/brands/iiith.png' },
     { name: 'IBM Research', logo: '/brands/ibm.png' },
     { name: 'TCS Research', logo: '/brands/tcs.png' },
-    { name: 'university of jyväskylä', logo: '/brands/jyu.png' },
+    { name: 'University of Jyväskylä', logo: '/brands/jyu.png' },
     { name: 'Become', logo: '/brands/become.png' },
     { name: 'CogSci Lab', logo: '/brands/kcis.png' },
+    { name: 'Medium', logo: '/brands/med.png' },
     { name: 'ChargeKart', logo: '/brands/ck.png' },
 ];
 
@@ -20,14 +21,17 @@ const BrandsMarquee = () => {
         <div className="py-10 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <Marquee pauseOnHover autoFill speed={50}>
                 {brands.map((brand) => (
-                    <div key={brand.name} className="mx-12 text-center">
+                    // This parent div now controls the size and alignment
+                    <div
+                        key={brand.name}
+                        className="mx-16 flex h-16 w-48 items-center justify-center" // <-- KEY CHANGE 1
+                    >
                         <Image
                             src={brand.logo}
                             alt={`${brand.name} logo`}
-                            width={120}
-                            height={60}
-                            className="h-18 w-auto object-contain opacity-90 hover:opacity-100 transition-all"
-                            // style={{ filter: 'grayscale(1) invert(0.8)' }}
+                            width={150} // More representative width
+                            height={75} // More representative height
+                            className="max-h-full w-auto object-contain opacity-90 transition-all hover:opacity-100" // <-- KEY CHANGE 2
                         />
                     </div>
                 ))}
