@@ -30,17 +30,17 @@ const ProjectList = () => {
                 return;
             }
 
-            const handleMouseMove = contextSafe?.((e: MouseEvent) => {
-                if (!containerRef.current) return;
-                // if (!imageContainer.current) return;
+            // const handleMouseMove = contextSafe?.((e: MouseEvent) => {
+            //     if (!containerRef.current) return;
+            //     // if (!imageContainer.current) return;
 
-                if (window.innerWidth < 768) {
-                    setSelectedProject(null);
-                    return;
-                }
+            //     if (window.innerWidth < 768) {
+            //         setSelectedProject(null);
+            //         return;
+            //     }
 
-                const containerRect =
-                    containerRef.current?.getBoundingClientRect();
+                // const containerRect =
+                //     containerRef.current?.getBoundingClientRect();
                 // const imageRect =
                 //     imageContainer.current.getBoundingClientRect();
                 // const offsetTop = e.clientY - containerRect.y;
