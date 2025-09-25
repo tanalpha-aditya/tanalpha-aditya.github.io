@@ -43,7 +43,7 @@ const ProjectList = () => {
                     containerRef.current?.getBoundingClientRect();
                 // const imageRect =
                 //     imageContainer.current.getBoundingClientRect();
-                const offsetTop = e.clientY - containerRect.y;
+                // const offsetTop = e.clientY - containerRect.y;
 
                 // if cursor is outside the container, hide the image
                 // if (

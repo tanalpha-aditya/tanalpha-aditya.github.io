@@ -36,9 +36,8 @@ const extractDescription = (content: string, item: any) => {
     return 'Click to read more.';
 };
 
-export const getMediumPosts = async (
-    username = 'tanlapha-aditya',
-): Promise<MediumPost[]> => {
+export const getMediumPosts = async (): // username = 'tanlapha-aditya',
+Promise<MediumPost[]> => {
     try {
         const feedUrl = `https://medium.com/feed/@tanalpha-aditya`;
 
